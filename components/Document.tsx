@@ -44,6 +44,7 @@ function Document({ id }: { id: string }) {
             {isUpdating ? "Updating..." : "Update"}
           </Button>
           {/* if */}
+
           {/* isowner && invite, deletedocument */}
         </form>
       </div>

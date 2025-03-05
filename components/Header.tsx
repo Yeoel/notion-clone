@@ -9,6 +9,7 @@ import {
 } from "@clerk/nextjs";
 
 import React from "react";
+import Breadcrumbs from "./Breadcrumbs";
 
 function Header() {
   const { user } = useUser();
@@ -21,6 +22,8 @@ function Header() {
           {`'s`} Space
         </h1>
       )}
+
+      <Breadcrumbs />
 
       <div>
         <SignedOut>
