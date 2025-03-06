@@ -14,6 +14,7 @@ import "@blocknote/shadcn/style.css";
 import { useSelf } from "@liveblocks/react/suspense";
 import stringToLightColor from "@/lib/stringToColor";
 import TranslateDocument from "./TranslateDocument";
+import ChatToDocument from "./ChatToDocument";
 
 type EditorProps = {
   doc: Y.Doc;
@@ -80,6 +81,7 @@ function Editor() {
         {/* Translate document */}
         <TranslateDocument doc={doc} />
         {/* chatto document ai */}
+        {/* <ChatToDocument doc={doc} /> */}
 
         {/* dark mode */}
         <Button className={style} onClick={() => setDarkMode(!darkMode)}>
