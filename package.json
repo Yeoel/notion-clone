@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@blocknote/core": "^0.23.2-hotfix.0",
+    "@blocknote/core": "^0.25.1",
     "@blocknote/mantine": "^0.23.2-hotfix.0",
-    "@blocknote/react": "^0.23.2-hotfix.0",
+    "@blocknote/react": "^0.25.1",
+    "@blocknote/shadcn": "^0.25.1",
     "@clerk/nextjs": "^6.12.3",
     "@liveblocks/client": "^2.20.0",
     "@liveblocks/node": "^2.20.0",
