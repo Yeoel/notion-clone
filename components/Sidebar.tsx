@@ -97,31 +97,27 @@ function Sidebar() {
             {groupedData.owner.map((doc) => (
               <React.Fragment key={doc.id}>
                 {/* <p>{doc.roomId}</p> */}
-                <SidebarOption
-                  key={doc.id}
-                  id={doc.id}
-                  href={`/doc/${doc.id}`}
-                />
+                <SidebarOption id={doc.id} href={`/doc/${doc.id}`} />
+              </React.Fragment>
+            ))}
+          </>
+        )}
+        {/* Shared with me */}
+        {groupedData.editor.length > 0 && (
+          <>
+            <h2 className="text-gray-500 font-semibold text-sm">
+              Shared with Me
+            </h2>
+            {groupedData.editor.map((doc) => (
+              <React.Fragment key={doc.id}>
+                {/* <p>{doc.roomId}</p> */}
+                <SidebarOption id={doc.id} href={`/doc/${doc.id}`} />
               </React.Fragment>
             ))}
           </>
         )}
       </div>
 
-      {/* Shared with me */}
-      {groupedData.editor.length > 0 && (
-        <>
-          <h2 className="text-gray-500 font-semibold text-sm">
-            Shared with Me
-          </h2>
-          {groupedData.editor.map((doc) => (
-            <React.Fragment key={doc.id}>
-              {/* <p>{doc.roomId}</p> */}
-              <SidebarOption key={doc.id} id={doc.id} href={`/doc/${doc.id}`} />
-            </React.Fragment>
-          ))}
-        </>
-      )}
       {/* List */}
     </>
   );
