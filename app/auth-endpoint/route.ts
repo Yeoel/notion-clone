@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
     userInfo: {
       name: sessionClaims?.fullName!,
       email: sessionClaims?.email!,
-      avatar: sessionClaims?.avatar,
+      avatar: sessionClaims?.avatar!,
     },
   });
 
